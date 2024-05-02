@@ -41,7 +41,6 @@ def get_account_list(api_url, auth_token):
     response = requests.post(api_url, data=request_xml)
     if response.status_code == 200:
         # Parse the response to extract account information
-        # (you may need to adapt this based on the actual API response format)
         account_list = response.content
         return account_list
     else:
