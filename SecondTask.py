@@ -65,7 +65,7 @@ def logout_user(api_url, auth_token):
         print(f"Error: Logout request failed (Status code: {response.status_code})")
 
 if __name__ == "__main__":
-    api_url = "https://mail.example.com/icewarpapi/"
+    api_url = "http://localhost/icewarpapi/"
     auth_challenge = get_auth_challenge(api_url)
     username = input("Enter your username: ")
     password = input("Enter your password: ")
